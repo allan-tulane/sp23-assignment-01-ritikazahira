@@ -9,7 +9,16 @@ def foo(x):
     pass
 
 def longest_run(mylist, key):
-    ### TODO
+    longest_run_length = 0
+    current_run_length = 0
+    for i in range(len(myarray)):
+        if myarray[i] == key:
+            current_run_length += 1
+            if current_run_length > longest_run_length:
+                longest_run_length = current_run_length
+        else:
+            current_run_length = 0
+    return longest_run_length
     pass
 
 
